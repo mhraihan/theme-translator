@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "theme-translator"
+client_id = "169f7a07569696c7f13ebeb5f6b1d177"
+application_url = "https://designed-jail-referenced-right.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://designed-jail-referenced-right.trycloudflare.com/auth/callback",
+  "https://designed-jail-referenced-right.trycloudflare.com/auth/shopify/callback",
+  "https://designed-jail-referenced-right.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-01"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "lalalipsbd.myshopify.com"
